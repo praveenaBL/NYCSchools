@@ -53,7 +53,9 @@ struct HomeView: View {
             }
         }
     }
-    
+    /*
+     Display all NYC high schools list if search text is empty. If search text is entered returns NYC high school list, where school name equals to search text
+     */
     var schoolsList: [SchoolDataModel] {
         if searchText.isEmpty {
             return schoolViewModel.nycHighSchoolsList

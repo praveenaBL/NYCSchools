@@ -13,6 +13,9 @@ class SchoolViewModel: ObservableObject {
     @Published var nycHighSchoolsSatScore: [SchoolSatScoreDataModel] = []
     @Published var searchText: String = ""
     
+    /*
+    Enum for network errors
+     */
     enum NetworkingError: LocalizedError {
         case badURlResponse(url: URL)
         case unknown
@@ -24,7 +27,10 @@ class SchoolViewModel: ObservableObject {
             }
         }
     }
-    
+    /*
+     Function returns sorted NYC highschools list from JSON Data
+     
+     */
     func fetchNycHighSchoolsList() async throws {
         do {
             let data = try await fetchData(urlString: Constants.highSchoolsURL)
@@ -39,6 +45,9 @@ class SchoolViewModel: ObservableObject {
         }
     }
     
+    /*
+     Function retrieves JSON Data from given API
+     */
     func fetchData(urlString: String) async throws -> Data {
         guard let url = URL(string: urlString) else {
             fatalError(Constants.notAbleToGetURLFromString)
@@ -52,6 +61,9 @@ class SchoolViewModel: ObservableObject {
         return data
     }
     
+    /*
+     Function returns SAT Score details 
+     */
     func fetchSatData() async throws {
         do {
             let data = try await fetchData(urlString: Constants.schoolWithSATScoreURL)
