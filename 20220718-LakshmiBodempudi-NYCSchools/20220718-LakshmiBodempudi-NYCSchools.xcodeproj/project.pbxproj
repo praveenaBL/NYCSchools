@@ -26,6 +26,7 @@
 		0D618551288E09CB008C0369 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D618550288E09CB008C0369 /* SearchBarView.swift */; };
 		0D618553288E3237008C0369 /* SchoolRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D618552288E3237008C0369 /* SchoolRowView.swift */; };
 		0D618557288F308F008C0369 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D618556288F308F008C0369 /* DetailView.swift */; };
+		0DB7FDFC28912091007A7638 /* SchoolViewModel_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB7FDFB28912091007A7638 /* SchoolViewModel_Tests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		0D618550288E09CB008C0369 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		0D618552288E3237008C0369 /* SchoolRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolRowView.swift; sourceTree = "<group>"; };
 		0D618556288F308F008C0369 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		0DB7FDFB28912091007A7638 /* SchoolViewModel_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolViewModel_Tests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				0D618515288B43F8008C0369 /* _0220718_LakshmiBodempudi_NYCSchoolsTests.swift */,
+				0DB7FDFB28912091007A7638 /* SchoolViewModel_Tests.swift */,
 			);
 			path = "20220718-LakshmiBodempudi-NYCSchoolsTests";
 			sourceTree = "<group>";
@@ -370,6 +373,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DB7FDFC28912091007A7638 /* SchoolViewModel_Tests.swift in Sources */,
 				0D618516288B43F8008C0369 /* _0220718_LakshmiBodempudi_NYCSchoolsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

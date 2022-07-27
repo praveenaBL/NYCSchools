@@ -20,6 +20,9 @@ struct SchoolRowView: View {
 }
 
 extension SchoolRowView {
+    /*
+     Display School Name
+     */
     private var schoolName: some View {
         Text("\(school.schoolName)")
             .font(.headline)
@@ -28,6 +31,9 @@ extension SchoolRowView {
             .frame(maxWidth: .infinity, alignment: .leading)
             .padding(.bottom, 5)
     }
+    /*
+     Display School Address
+     */
     private var schoolAddress: some View {
         VStack(spacing: 0){
             HStack(alignment: .top, spacing: 8) {
@@ -42,6 +48,9 @@ extension SchoolRowView {
         }
         .padding(.bottom, 5)
     }
+    /*
+     Display Phone Number
+     */
     private var phoneNumber: some View {
         HStack(alignment: .top, spacing: 4) {
             Text("Phone: ")
